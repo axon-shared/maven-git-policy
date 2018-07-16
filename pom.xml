@@ -4,8 +4,26 @@
     <groupId>com.axondevgroup</groupId>
     <artifactId>maven-git-policy</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>maven-git-policy Maven Mojo</name>
+
+    <description>Maven Plugin to enforce git rules through the hooks</description>
+    <url>https://github.com/axon-shared/maven-git-policy</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>axon-shared</id>
+            <name>Axon Shared</name>
+            <email>hello@axondevgroup.com</email>
+        </developer>
+    </developers>
 
     <scm>
         <connection>scm:git:git://github.com/axon-shared/maven-git-policy.git</connection>
