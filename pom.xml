@@ -4,7 +4,7 @@
     <groupId>com.axondevgroup</groupId>
     <artifactId>maven-git-policy</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <name>maven-git-policy Maven Mojo</name>
 
     <description>Maven Plugin to enforce git rules through the hooks</description>
@@ -29,7 +29,7 @@
         <connection>scm:git:git://github.com/axon-shared/maven-git-policy.git</connection>
         <developerConnection>scm:git:git@github.com/axon-shared/maven-git-policy.git</developerConnection>
         <url>https://github.com/axon-shared/maven-git-policy</url>
-        <tag>1.0</tag>
+        <tag>maven-git-policy-1.0</tag>
     </scm>
 
     <dependencies>
