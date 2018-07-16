@@ -1,0 +1,13 @@
+# Directory-based project format
+.idea/
+**/target/
+
+# File-based project format
+*.ipr
+*.iws
+*.iml
+
+# OSX Specific Files
+*.DS_Store
+
+*.log

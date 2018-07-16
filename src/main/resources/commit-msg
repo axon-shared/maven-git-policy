@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo "Enforcing Commit Policies..."
+result=`cat .git/COMMIT_EDITMSG | sed 's/ //g' | grep -E "(NEW|CHANGE|FIX):([A-Z]+-[0-9]+)-[A-Za-z0-9]+"`
+
+if [[ -z "$result" ]]; then
+    echo "Aborting commit. Your commit message is incorrect" >&2
+    echo " " >&2
+    echo "Message must follow the next format:" >&2
+    echo "[FIX|CHANGE|NEW]: JIRA-123 - Short ticket description" >&2
+    echo " " >&2
+    echo ", where:" >&2
+    echo "FIX - commit contains the fix" >&2
+    echo "CHANGE - commit contains the code change / refactoring" >&2
+    echo "NEW - commit contains the new feature / functionality" >&2
+    echo "JIRA-123 - JIRA ticket number" >&2
+    exit 1
+fi
